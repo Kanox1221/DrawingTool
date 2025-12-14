@@ -1,11 +1,10 @@
 import './App.css'
+import CreateSVGCanvas from '../canvas/CanvasStage.tsx'
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900">
-      <h1 className="text-3xl font-bold text-white">
-        Drawing Tool Starter
-      </h1>
+    <div className='fixed inset-0'>
+      <CreateSVGCanvas />
     </div>
   )
 }
