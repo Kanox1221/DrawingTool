@@ -1,12 +1,16 @@
 import { useRef } from 'react';
 
 function CreateSVGCanvas() {
-  // Need for
   const svgRef = useRef<SVGSVGElement | null>(null);
 
   return (
     <div className="fixed inset-0">
-      <svg ref={svgRef} className="w-full h-full" onPointerDown={handlePointerDown}>
+      <svg
+        data-testid="canvas"
+        ref={svgRef}
+        className="w-full h-full"
+        onPointerDown={handlePointerDown}
+      >
         <rect width="100%" height="100%" fill="lightblue" />
       </svg>
     </div>
